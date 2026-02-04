@@ -8,7 +8,6 @@ pipeline {
     stages {
         stage("Install Dependencies") {
             steps {
-                git url: "https://github.com/FabiotooX/Cypress_Pipeline.git"
                 sh "npm ci"
                 sh "npx cypress install"
             }
